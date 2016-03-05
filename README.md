@@ -11,7 +11,7 @@ We use this module at [Datawire.io](https://datawire.io/) to provide alerting to
 | service_fqn        | A service's fully qualified name. In Datawire-land we generally use a format like <Environment>-<Label>-<Service-Id>. |
 | pagerduty_endpoint | The HTTPS endpoint created by PagerDuty after configuring a service.                                                  |
 
-## What this module Does
+## What this Module Does
 
 1. Creates an Amazon SNS topic.
 2. Creates an Amazon SNS topic subscription for PagerDuty. PagerDuty will automatically confirm the subscription.
