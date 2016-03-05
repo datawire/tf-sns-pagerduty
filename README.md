@@ -1,4 +1,4 @@
-# Terraform SNS-PagerDuty Integration Module
+# Datawire SNS-PagerDuty Integration Terraform Module
 
 Provides an Amazon SNS topic that [PagerDuty](https://www.pagerduty.com) can publish notifications about service alarms into. PagerDuty will automatically subscribe to the topic and receive notifications after this role runs.
 
@@ -11,7 +11,7 @@ We use this module at [Datawire.io](https://datawire.io/) to provide alerting to
 | service_fqn        | A service's fully qualified name. In Datawire-land we generally use a format like <Environment>-<Label>-<Service-Id>. |
 | pagerduty_endpoint | The HTTPS endpoint created by PagerDuty after configuring a service.                                                  |
 
-## What this role Does
+## What this module Does
 
 1. Creates an Amazon SNS topic.
 2. Creates an Amazon SNS topic subscription for PagerDuty. PagerDuty will automatically confirm the subscription.
