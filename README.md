@@ -2,6 +2,8 @@
 
 Provides an Amazon SNS topic that [PagerDuty](https://www.pagerduty.com) can publish notifications about service alarms into. PagerDuty will automatically subscribe to the topic and receive notifications after this role runs.
 
+We use this module at [Datawire.io](https://datawire.io/) to provide alerting to our internal cloud development and operations team.
+
 ## Variables
 
 |    Name            | Purpose                                                                                                               |
