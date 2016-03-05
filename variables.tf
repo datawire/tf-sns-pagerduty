@@ -15,8 +15,16 @@
 // limitations under the License.
 //
 
-variable "service_fqn" {
-  description = "the fully qualified name ('FQN') of the service."
+variable "environment_type" {
+  description = "identifies the type of runtime environment, for example, 'dev' or 'prod'."
+}
+
+variable "service_name" {
+  description = "the name of the service, for example, 'discovery', 'identity', 'juggernaut'."
+}
+
+variable "service_namespace" {
+  description = "the namespace of the service, for example, 'plombardi'."
 }
 
 variable "pagerduty_endpoint" {

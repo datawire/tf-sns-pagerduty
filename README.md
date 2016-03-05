@@ -8,7 +8,9 @@ We use this module at [Datawire.io](https://datawire.io/) to provide alerting to
 
 |    Name            | Purpose                                                                                                               |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------|
-| service_fqn        | A service's fully qualified name. In Datawire-land we generally use a format like <Environment>-<Label>-<Service-Id>. |
+| environment_type   | Identifies the type of runtime environment, for example, 'dev' or 'prod'.                                             |
+| service_name       | The name of the service, for example, 'discovery', 'identity', 'juggernaut'.                                          |
+| service_namespace  | The namespace of the service, for example, 'plombardi'.                                                               |
 | pagerduty_endpoint | The HTTPS endpoint created by PagerDuty after configuring a service.                                                  |
 
 ## What this Module Does

@@ -16,8 +16,8 @@
 //
 
 resource "aws_sns_topic" "pagerduty" {
-  name = "${var.service_fqn}-pagerduty"
-  display_name = "${var.service_fqn}"
+  name = "${var.environment_type}-${var.service_namespace}-${var.service_name}-pagerduty"
+  display_name = "${var.environment_type}-${var.service_namespace}-${var.service_name}"
 }
 
 resource "aws_sns_topic_subscription" "pagerduty" {
